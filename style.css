@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: #e5e5e5;
+    font-family: Arial ;
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: #080808;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #191919;
+}
+
+nav h2 {
+    color: #a78bfa;
+}
+
+.nav-links a {
+    color: #bdbdbd;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+
+.welcome {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.welcome h1 {
+    color: #c4b5fd;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    color: #a3a3a3;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #6d28d9;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+}
+
+
+section {
+    padding: 40px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #c4b5fd;
+    margin-bottom: 25px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #0b0b0b;
+    border: 1px solid #202020;
+    padding: 25px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #6d28d9;
+}
+
+.card h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #a3a3a3;
+}
+
+
+.goal {
+    background-color: #080808;
+    border-top: 1px solid #191919;
+    border-bottom: 1px solid #191919;
+    text-align: center;
+}
+
+.goal p {
+    color: #a3a3a3;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+footer {
+    background-color: #050505;
+    color: #737373;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #191919;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
