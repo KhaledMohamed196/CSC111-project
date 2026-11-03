@@ -1,58 +1,267 @@
-<!-- this is our html file where we can edit and do our stuff -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>csc111-Home</title>
+
+    <title>World Explorer | Discover the World</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <nav>
-        <h2>TeamConnect</h2>
+    <header class="navbar">
 
-        <div class="nav-links">
+        <a href="index.html" class="logo">
+            WORLD<span>EXPLORER</span>
+        </a>
+
+        <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-        </div>
-    </nav>
+            <a href="#destinations">Destinations</a>
+            <a href="about.html">About</a>
+        </nav>
 
-    <section class="welcome">
-        <h1>Welcome to TeamConnect!</h1>
+    </header>
 
-        <p>
-            We are a team of students working together to learn,
-            share ideas, and create projects using technology.
-        </p>
 
-        <a href="about.html" class="button">Meet Our Team</a>
-    </section>
+    <main>
 
-    <section>
-        <h2>What We Do</h2>
+        <section class="hero">
 
-        <div class="cards">
-            <div class="card">
-                <h3>Learning</h3>
-                <p>We learn new skills and improve our knowledge together.</p>
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    YOUR JOURNEY STARTS HERE
+                </p>
+
+                <h1>
+                    Discover the
+                    <span>Extraordinary.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore breathtaking destinations,
+                    unforgettable experiences, and
+                    beautiful places around the world.
+                </p>
+
+                <a href="#destinations" class="btn">
+                    Explore Destinations
+                </a>
+
             </div>
 
-            <div class="card">
-                <h3>Teamwork</h3>
-                <p>We share ideas and help each other achieve our goals.</p>
+        </section>
+
+
+        <section class="section" id="destinations">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    EXPLORE THE WORLD
+                </p>
+
+                <h2>
+                    Choose Your Next Destination
+                </h2>
+
+                <p>
+                    From historic cities to natural wonders,
+                    find the destination that inspires you.
+                </p>
+
             </div>
 
-            <div class="card">
-                <h3>Creating</h3>
-                <p>We use our knowledge to build creative projects.</p>
+
+            <div class="destination-grid">
+
+
+                <a href="france.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+                        alt="Eiffel Tower in Paris">
+
+                    <div class="destination-info">
+
+                        <h3>France</h3>
+
+                        <p>Romance, art and timeless beauty</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="egypt.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e"
+                        alt="Pyramids of Egypt">
+
+                    <div class="destination-info">
+
+                        <h3>Egypt</h3>
+
+                        <p>Discover the land of ancient wonders</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="germany.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b"
+                        alt="German city architecture">
+
+                    <div class="destination-info">
+
+                        <h3>Germany</h3>
+
+                        <p>History, culture and modern cities</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="bali.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4"
+                        alt="Bali tropical landscape">
+
+                    <div class="destination-info">
+
+                        <h3>Bali</h3>
+
+                        <p>Tropical escapes and peaceful nature</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="switzerland.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7"
+                        alt="Swiss mountains">
+
+                    <div class="destination-info">
+
+                        <h3>Switzerland</h3>
+
+                        <p>Mountains, lakes and alpine beauty</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="usa.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9"
+                        alt="New York City">
+
+                    <div class="destination-info">
+
+                        <h3>USA</h3>
+
+                        <p>Endless possibilities and iconic cities</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="italy.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963"
+                        alt="Italian coastal village">
+
+                    <div class="destination-info">
+
+                        <h3>Italy</h3>
+
+                        <p>Art, architecture and unforgettable food</p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="iceland.html" class="destination-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1476610182048-b716b8518aae"
+                        alt="Iceland landscape">
+
+                    <div class="destination-info">
+
+                        <h3>Iceland</h3>
+
+                        <p>Wild landscapes and natural wonders</p>
+
+                    </div>
+
+                </a>
+
+
             </div>
-        </div>
-    </section>
+
+        </section>
+
+
+        <section class="about-preview">
+
+            <div class="about-preview-content">
+
+                <p class="eyebrow">
+                    ABOUT WORLD EXPLORER
+                </p>
+
+                <h2>
+                    The world is waiting to be explored.
+                </h2>
+
+                <p>
+                    World Explorer is your guide to discovering
+                    extraordinary destinations and finding
+                    inspiration for your next adventure.
+                </p>
+
+                <a href="about.html" class="btn">
+                    Discover Our Story
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
     <footer>
-        <p>&copy; 2026 TeamConnect. All rights reserved.</p>
+
+        <p>
+            © 2026 World Explorer. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
